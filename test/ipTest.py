@@ -30,12 +30,13 @@ def AIpTest():
     for ip in ipList:
         try:
             ipStr="'"+ip+"'";
-            proxy_handler=urllib.request.ProxyHandler({'http':ip});
-            proxy_auth_handler=urllib.request.ProxyBasicAuthHandler();
-            opener=urllib.request.build_opener(proxy_handler);
+          #  #proxy_handler=urllib.request.ProxyHandler({'http':'jp02.ipip.re:1080'});
+           # proxy_auth_handler=urllib.request.ProxyBasicAuthHandler();
+           # opener=urllib.request.build_opener(proxy_handler);
             #data=opener.open('http://www.baidu.com',timeout=3);
 
-            data=opener.open('http://www.google.com');
+          #  data=opener.open('http://www.google.com');
+            data=urllib.request.urlopen('http://www.google.com');
             dataR=data.read();
             #print(dataR);
             if(dataR):
