@@ -106,9 +106,9 @@ class browserTest:
                 j=0;
                 self.createOpener(header_bs,0);#置个0，避免新的cookie覆盖登陆时的cookie
                 for mypage,dirname in getUrl:
-                    print(getAuth[j]);
+                    #print(getAuth[j]);
                     if(self.__someone and getAuth[j] not in self.__name):
-                        print(getAuth[j] ,"not in ",self.__name);
+                        #print(getAuth[j] ,"not in ",self.__name);
                         j +=1;
                         continue;
                     else:
@@ -168,6 +168,6 @@ class browserTest:
 
 if __name__=='__main__':
     name=['魏晴','魔幻王'];
-    app=browserTest(1,2,True,name);
+    app=browserTest(1,200,True,name);
     app.go();
     print('Done !');
