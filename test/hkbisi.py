@@ -49,8 +49,8 @@ class browserTest:
     def createPostData(self):
         post_data={
             'fastloginfield':'username',
-            'username':'wyude',
-            'password':'3692580000000000',
+            'username':'w',
+            'password':'3',
             'quickforward':'yes',
             'handlekey':'ls'
         };
